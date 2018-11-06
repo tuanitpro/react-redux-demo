@@ -10,9 +10,8 @@ class ProductGridView extends Component{
     constructor(props){
         super(props)    
         this.displayProductMap = this.displayProductMap.bind(this)    
-    }
-    
-    componentDidMount(){
+    }     
+    componentWillMount(){
         this.props.dispatch(productActions.getAll())
     }
     displayProductMap(item){

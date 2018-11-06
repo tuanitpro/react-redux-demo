@@ -9,7 +9,7 @@ class Sidebar extends  Component {
         super(props)
         this.displayCategoryMap = this.displayCategoryMap.bind(this)
     }
-    componentDidMount() {
+    componentWillMount() {
         this.props.dispatch(categoryActions.getAll());       
     }
     displayCategoryMap(item){
